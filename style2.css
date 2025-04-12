@@ -309,11 +309,11 @@ footer p {
   gap: 2em;
 }
 
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
 @media (min-width: 675px) {
   .cards {
