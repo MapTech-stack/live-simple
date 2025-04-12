@@ -271,10 +271,9 @@ footer p {
 }
 
 /* section */
-
+/* Base styles */
 .template {
   background: #888;
-  /* color: #fff; */
   color: black;
 }
 
@@ -289,7 +288,6 @@ footer p {
 .card {
   background: #fff;
   padding: 1em;
-  /* margin-bottom: 2em; */
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -309,14 +307,39 @@ footer p {
   gap: 2em;
 }
 
-/* @media (min-width: 500px) {
+/* Media Queries for general responsiveness */
+@media (min-width: 500px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
-} */
+}
 
 @media (min-width: 675px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Special media query for phones set to Desktop Site */
+@media screen and (max-width: 1024px) and (max-device-width: 768px) and (min-resolution: 2dppx) {
+  .template h2 {
+    font-size: 2em;
+  }
+
+  .cards {
+    grid-template-columns: 1fr !important;
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .card {
+    padding: 0.75em;
+    margin-bottom: 1em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
